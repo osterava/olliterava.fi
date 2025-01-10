@@ -1,12 +1,14 @@
 import React from 'react';
 import debt from '../images/debt.png'
 import portfolio from '../images/portfolio.png'
+import insurance from '../images/paaikkuna.png'
+import kauppa from '../images/OHJ.png'
 
 const Projects = () => {
   const projectList = [
     {
       title: 'Debt - map',
-      description: 'Single-page app that allows users to explore debt rates in different countries. University project',
+      description: 'Single-page app that allows users to explore debt rates in different countries',
       link: 'https://github.com/osterava/TIEA207_Projekti',
       imageUrl: debt
     },
@@ -14,7 +16,7 @@ const Projects = () => {
       title: 'Insurance app',
       description: 'Insurance app. Customer can handle its own insurances from one app. University project',
       link: 'https://github.com/osterava/VakuutusetOHJ2',
-      imageUrl: 'path/to/image2.jpg'
+      imageUrl: insurance
     },
     {
         title: 'Portfolio',
@@ -26,10 +28,9 @@ const Projects = () => {
         title: 'My first game with C# ',
         description: 'Player can do groceries in this 2D game.',
         link: 'https://github.com/osterava/OHJ1-ty-',
-        imageUrl: 'path/to/image2.jpg'
+        imageUrl: kauppa
       },
-    // Add more projects here
-  ];
+  ]
 
   return (
     <section id="projects" className="projects">
@@ -47,7 +48,7 @@ const Projects = () => {
         ))}
       </div>
     </section>
-  );
-};
+  )
+}
 
 export default Projects;

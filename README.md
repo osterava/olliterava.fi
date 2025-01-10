@@ -1,5 +1,5 @@
 # Portfolio - React app
 
-## TODO:: 
+## TODO:
 
 ### Deploy, css animaatiot, projektien kuvat
