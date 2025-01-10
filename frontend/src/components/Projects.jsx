@@ -20,7 +20,7 @@ const Projects = () => {
     },
     {
         title: 'Portfolio',
-        description: 'This react app - my portfolios',
+        description: 'This react app - my portfolio',
         link: 'https://github.com/osterava/portfolio_olli_terava',
         imageUrl: portfolio
       },
