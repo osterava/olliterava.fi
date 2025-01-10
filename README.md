@@ -1,5 +1,1 @@
-# Portfolio - React app
-
-## TODO:
-
-### Deploy, css animaatiot, projektien kuvat
+# Tässä lnkki deployattuun versioon: [https://portfolio-olli-terava.onrender.com/](url) (Huom käynnistyminen hieman hidas!)
