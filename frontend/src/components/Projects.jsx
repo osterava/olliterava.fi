@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import debt from '../images/debt.png'
 import portfolio from '../images/portfolio.png'
 import insurance from '../images/paaikkuna.png'
@@ -51,4 +51,4 @@ const Projects = () => {
   )
 }
 
-export default Projects;
+export default Projects
