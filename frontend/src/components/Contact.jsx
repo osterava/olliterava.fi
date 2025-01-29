@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import emailjs from 'emailjs-com';
+import emailjs from 'emailjs-com'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -24,27 +24,34 @@ const Contact = () => {
     })
   }
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const showNotification = (message) => {
+    const notification = document.createElement("div")
+    notification.className = "notification"
+    notification.innerText = message
+    document.body.appendChild(notification)
+  
+    setTimeout(() => {
+      notification.remove();
+    }, 5000);
+  }
+  
 
-    emailjs
-      .sendForm(
-        'service_id', // EmailJS:n palvelu-ID
-        'template_id', // EmailJS:n mallin ID
-        e.target, // Lomakkeen elementit
-        'user_id' // Käyttäjä-ID (löytyy EmailJS:n hallintapaneelista)
-      )
-      .then(
-        (result) => {
-          console.log('Sähköposti lähetetty:', result.text);
-          clearData();
-          alert('Sähköposti on lähetetty!');
-        },
-        (error) => {
-          console.error('Sähköpostin lähetys epäonnistui:', error.text);
-          alert('Sähköpostin lähetys epäonnistui, yritä myöhemmin uudelleen.');
-        }
-      )
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    emailjs.sendForm(
+      process.env.REACT_APP_SERVICE_ID,
+      process.env.REACT_APP_TEMPLATE_ID, 
+      e.target,                         
+      process.env.REACT_APP_USER_ID      
+    )
+    .then((result) => {
+      console.log('Message sent successfully:', result.text)
+      showNotification("Message sent successfully!")
+      clearData()
+    }, (error) => {
+      console.log('Error sending message:', error.text)
+      showNotification("Error sending form: " + error)
+    })
   }
 
   return (
