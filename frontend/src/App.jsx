@@ -5,6 +5,7 @@ import Skills from './components/Skills'
 import About from './components/About'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
+import Resume from './components/Resume'
 import './App.css'
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/contact" element={<Contact />} />
+        <Route path="/resume" element={<Resume />} />
         <Route path="/" element={(
           <div>
             <About />
