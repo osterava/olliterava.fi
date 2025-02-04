@@ -1,9 +1,11 @@
 import React, { useState, useRef } from "react";
-import { Link } from "react-router-dom"; // Tuo Link komponentti
+import { Link } from "react-router-dom"
 import kuva_0 from '../images/kuva_0.jpg';
 import kuva_3 from '../images/kuva_3.jpeg';
 import kuva_4 from '../images/kuva_4.jpeg';
 import kuva_5 from '../images/kuva_5.jpeg';
+import linkedin from '../images/linkedin.PNG'
+import git from '../images/git-log.png'
 
 const images = [kuva_0, kuva_3, kuva_4, kuva_5];
 
@@ -42,7 +44,14 @@ const Header = () => {
           <nav>
             <ul>
               <li><Link to="/">Home</Link></li> 
-              <li><Link to="/contact">Contact</Link></li> 
+              <li><Link to="/resume">Resume</Link></li>  
+              <li><Link to="/contact">Contact</Link></li>
+              <a href="https://linkedin.com/in/olliterava" >
+                <img src={linkedin} alt="linkedin" width={23}/>
+               </a>
+              <a href= "https://github.com/osterava">
+                <img src={git} alt="github" width={23}/>
+              </a>
             </ul>
           </nav>
         </div>

@@ -42,12 +42,12 @@ button:hover {
 }
 
 .prev {
-  top: 457px;
+  top: 455px;
   left: 100px;
 }
 
 .next {
-  top: 457px;
+  top: 455px;
   right: 100px;
 }
 
@@ -61,7 +61,7 @@ button:hover {
   font-family: "Alfa Slab One", serif;
   display: flex;
   flex-direction: column;
-  margin-right: 20vw;
+  margin-right: 19vw;
 }
 
 .header {
@@ -117,6 +117,10 @@ header .navigation nav ul li a:hover {
   color: #007bff;
 }
 
+.header-logo_img {
+  width: 30px;
+}
+
 .about-me {
   padding: 20px;
   margin-left: 50px;
@@ -143,6 +147,11 @@ header .navigation nav ul li a:hover {
 .about-me a:hover {
   text-decoration: underline;
 }
+
+.about-me img {
+  width: 30px;
+}
+
 .projects {
   padding: 20px;
   text-align: center;
@@ -152,6 +161,7 @@ header .navigation nav ul li a:hover {
   padding: 20px;
   margin-left: 20px;
   margin-top: 55px;
+  margin-bottom: 55px;
   background-color: #dddce1;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -349,6 +359,20 @@ header .navigation nav ul li a:hover {
   z-index: 1000;
 }
 
+.resume {
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: Arial, sans-serif;
+}
+
+ul {
+  padding-left: 20px;
+  margin-bottom: 10px; /* Lisää väliä listan jälkeen */
+}
+
+ul li {
+  margin-bottom: 5px; /* Lisää väliä listan sisällä */
+}
 
 @media (min-width:2000px){
 
@@ -381,20 +405,15 @@ header .navigation nav ul li a:hover {
     right: 100px;
   }
 
+  
 
 }
 
 @media (min-width: 1500px) {
-  .skills,
   .projects {
-    padding: 30px 20px;
+    padding: 3px 20px;
     max-width: 70%;
     margin: 0 5% 0 5%;
-  }
-
-  .skills h2,
-  .projects h2 {
-    font-size: 3em;
   }
 
   .progress-description {
