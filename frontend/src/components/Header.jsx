@@ -31,11 +31,11 @@ const Header = () => {
     setCurrentIndex((prevIndex) => {
       const newIndex = (prevIndex - 1 + images.length) % images.length;
       return newIndex;
-    });
+    })
     setTimeout(() => {
       isChanging.current = false;
     }, 300);
-  };
+  }
 
   return (
     <header className="header">
@@ -52,6 +52,7 @@ const Header = () => {
               <a href= "https://github.com/osterava">
                 <img src={git} alt="github" width={23}/>
               </a>
+              <li><Link to="/contact">Contact</Link></li> 
             </ul>
           </nav>
         </div>
@@ -68,7 +69,7 @@ const Header = () => {
         </div>
       </div>
     </header>
-  );
-};
+  )
+}
 
 export default Header;
