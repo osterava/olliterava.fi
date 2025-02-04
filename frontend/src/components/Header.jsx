@@ -1,41 +1,41 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef } from "react"
 import { Link } from "react-router-dom"
-import kuva_0 from '../images/kuva_0.jpg';
-import kuva_3 from '../images/kuva_3.jpeg';
-import kuva_4 from '../images/kuva_4.jpeg';
-import kuva_5 from '../images/kuva_5.jpeg';
-import linkedin from '../images/linkedin.PNG'
-import git from '../images/git-log.png'
+import kuva_0 from "../images/kuva_0.jpg"
+import kuva_3 from "../images/kuva_3.jpeg"
+import kuva_4 from "../images/kuva_4.jpeg"
+import kuva_5 from "../images/kuva_5.jpeg"
+import linkedin from "../images/linkedin.PNG"
+import git from "../images/git-log.png"
 
-const images = [kuva_0, kuva_3, kuva_4, kuva_5];
+const images = [kuva_0, kuva_3, kuva_4, kuva_5]
 
 const Header = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const isChanging = useRef(false);
+  const [currentIndex, setCurrentIndex] = useState(0)
+  const isChanging = useRef(false)
 
   const nextImage = () => {
-    if (isChanging.current) return;
-    isChanging.current = true;
+    if (isChanging.current) return
+    isChanging.current = true
     setCurrentIndex((prevIndex) => {
-      const newIndex = (prevIndex + 1) % images.length;
-      return newIndex;
-    });
+      const newIndex = (prevIndex + 1) % images.length
+      return newIndex
+    })
     setTimeout(() => {
-      isChanging.current = false;
-    }, 300);
-  };
+      isChanging.current = false
+    }, 300)
+  }
 
   const prevImage = () => {
-    if (isChanging.current) return;
-    isChanging.current = true;
+    if (isChanging.current) return
+    isChanging.current = true
     setCurrentIndex((prevIndex) => {
-      const newIndex = (prevIndex - 1 + images.length) % images.length;
-      return newIndex;
-    });
+      const newIndex = (prevIndex - 1 + images.length) % images.length
+      return newIndex
+    })
     setTimeout(() => {
-      isChanging.current = false;
-    }, 300);
-  };
+      isChanging.current = false
+    }, 300)
+  }
 
   return (
     <header className="header">
@@ -68,7 +68,7 @@ const Header = () => {
         </div>
       </div>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

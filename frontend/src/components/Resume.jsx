@@ -29,7 +29,7 @@ const Resume = () => {
 
             <div className="job">
             <p><strong>Head of Educational Politics, Member of the Board </strong> <i> Algo ry</i></p>
-            <p>My task is to advocate engineering students’ rights and convey information about studies to different parties. I participate in different meetings to make sure that student rights and their views are also considered in decision making.I also resolve situations where students' rights may have been violated </p>
+            <p>My task is to advocate engineering students’ rights and convey information about studies to different parties. I participate in different meetings to make sure that student rights and their views are also considered in decision making.I also resolve situations where students´ rights may have been violated </p>
             <p>Jan 2024 - Jan 2025</p>
             </div>
             

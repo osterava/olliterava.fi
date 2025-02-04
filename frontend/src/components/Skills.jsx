@@ -1,19 +1,19 @@
-import React from 'react';
+import React from "react"
 
 const Skills = () => {
     const skills = [
-        { name: 'Python', level: 60 },
-        { name: 'React', level: 67 },
-        { name: 'CSS', level: 57 },
-        { name: 'Node.js', level: 63 },
-        { name: 'C#', level: 70 },
-        { name: 'Java', level: 70 }
+        { name: "Python", level: 60 },
+        { name: "React", level: 67 },
+        { name: "CSS", level: 57 },
+        { name: "Node.js", level: 63 },
+        { name: "C#", level: 70 },
+        { name: "Java", level: 70 }
       ]
 
       const languages = [
-        { name: 'Finnish', level: 100},
-        { name: 'English', level: 70},
-        { name: 'Swedish', level: 35},
+        { name: "Finnish", level: 100},
+        { name: "English", level: 70},
+        { name: "Swedish", level: 35},
       ]
 
   return (
@@ -47,4 +47,4 @@ const Skills = () => {
 }
 
 
-export default Skills;
+export default Skills

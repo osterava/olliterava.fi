@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
-import emailjs from 'emailjs-com'
+import React, { useState } from "react"
+import emailjs from "emailjs-com"
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
+    name: "",
+    email: "",
+    message: ""
   })
 
   const handleChange = (e) => {
@@ -16,11 +16,11 @@ const Contact = () => {
     })
   }
 
-  const clearData = (e) =>{
+  const clearData = () =>{
     setFormData({
-      name:'',
-      email:'',
-      message:''
+      name:"",
+      email:"",
+      message:""
     })
   }
 
@@ -31,8 +31,8 @@ const Contact = () => {
     document.body.appendChild(notification)
   
     setTimeout(() => {
-      notification.remove();
-    }, 5000);
+      notification.remove()
+    }, 5000)
   }
   
 
@@ -45,11 +45,11 @@ const Contact = () => {
       process.env.REACT_APP_USER_ID      
     )
     .then((result) => {
-      console.log('Message sent successfully:', result.text)
+      console.log("Message sent successfully:", result.text)
       showNotification("Message sent successfully!")
       clearData()
     }, (error) => {
-      console.log('Error sending message:', error.text)
+      console.log("Error sending message:", error.text)
       showNotification("Error sending form: " + error)
     })
   }
