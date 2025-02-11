@@ -435,12 +435,25 @@ ul li {
   .Merge > * {
     max-width: 45%; 
   }
+
+  .prev .next {
+    top:200px;
+  }
+}
+
+@media (max-width:900px){
+  .prev{
+    top:270px;
+    left:20px;
+  }
+  .next{
+    top:270px;
+    right:20px;
+  }
 }
 
 
-
-
-@media (max-width: 900px) {
+@media (max-width: 600px) {
 
   .image-container {
     padding-right: 20px;
