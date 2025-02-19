@@ -1,3 +1,9 @@
-#### Tässä lnkki deployattuun versioon: https://portfolio-olli-terava.onrender.com (Huom käynnistyminen hieman hidas!)
+### https://www.olliterava.fi
+Tässä oma verkkosivustoni, joka kertoo kootusti omista projekteistani, osaamisestani sekä tarjoaa helpon yhteydenottokanavan suoraan minuun!
 
-##### Tulossa mobiiliversio pian. Lisäksi animaatiot puuttuu vielä progress bareihin.
+#### 🚀 Teknologiat
+Frontend: React, Email.js
+Työkalut: npm, Webpack/Vite
+Backend: PHP
+Palvelin: Nginx
+Hostaus: Oma palvelin
