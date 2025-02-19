@@ -7,3 +7,7 @@
 - **Työkalut:** npm, Webpack/Vite  
 - **Palvelin:** Nginx, PHP  
 - **Hostaus:** Oma palvelin  
+
+#### 🚀 Domain & DNS
+- **Clouflare** DNS & Sertifikaatit & Nimipalvelimet
+- **Domainhotelli** Domain
