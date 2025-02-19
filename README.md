@@ -5,6 +5,5 @@
 
 - **Frontend:** React, Email.js  
 - **Työkalut:** npm, Webpack/Vite  
-- **Backend:** PHP  
-- **Palvelin:** Nginx  
+- **Palvelin:** Nginx, PHP  
 - **Hostaus:** Oma palvelin  
