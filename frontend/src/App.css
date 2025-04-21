@@ -172,7 +172,7 @@ header .navigation nav ul li a:hover {
 .projects h2 {
   font-size: 2em;
   color: #000000;
-  text-align: center; /* Ensures both h2 elements are centered */
+  text-align: center; 
 }
 
 .progress-container {
@@ -367,11 +367,43 @@ header .navigation nav ul li a:hover {
 
 ul {
   padding-left: 20px;
-  margin-bottom: 10px; /* Lisää väliä listan jälkeen */
+  margin-bottom: 10px;
 }
 
 ul li {
-  margin-bottom: 5px; /* Lisää väliä listan sisällä */
+  margin-bottom: 5px;
+}
+
+.xyhi {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.xyhi h1,h2 {
+  background-color:#717276;
+  padding: 10px;
+  border-radius: 10px;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.xyhi h2 {
+  font-size: larger;
+  padding: 15px;
+}
+
+.xyhi p {
+  line-height: 35px;
+  position: relative;
+  justify-content: center;
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 2px;
+  border: 2px solid #000;
+  box-shadow: 4px 4px 10px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-bottom: 25px;
+  margin-top: 25px;
 }
 
 @media (min-width:2000px){
@@ -404,9 +436,6 @@ ul li {
     top: 605px;
     right: 100px;
   }
-
-  
-
 }
 
 @media (min-width: 1500px) {
