@@ -63,7 +63,7 @@ const Resume = () => {
                 </li>
                 <li>Version control:
                     <ul>
-                        <li>Github & Git</li>
+                        <li>Github</li>
                     </ul>
                 </li>
                 <li>Networking:
@@ -76,6 +76,13 @@ const Resume = () => {
                         <li> Agile & Scrum </li>
                         <li> Trello </li>
                     </ul>
+                </li>
+                <li>
+                  Database & Resource management
+                  <ul>
+                    <li>MySQL, SQLite, MongoDB</li>
+                    <li>Contentful</li>
+                  </ul>
                 </li>
             </ul>
 

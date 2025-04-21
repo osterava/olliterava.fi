@@ -3,9 +3,16 @@ import debt from "../images/debt.png"
 import portfolio from "../images/portfolio.png"
 import insurance from "../images/paaikkuna.png"
 import kauppa from "../images/OHJ.png"
+import algo from "../images/algo.png"
 
 const Projects = () => {
   const projectList = [
+    {
+      title: "Algo ry – Website ",
+      description: "Website for Algo ry and its members",
+      link: "https://dev.olliterava.fi",
+      imageUrl: algo
+    },
     {
       title: "Debt - map",
       description: "Single-page app that allows users to explore debt rates in different countries",

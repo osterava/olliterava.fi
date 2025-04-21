@@ -3,11 +3,11 @@ import React from "react"
 const Skills = () => {
     const skills = [
         { name: "Python", level: 60 },
-        { name: "React", level: 67 },
-        { name: "CSS", level: 57 },
-        { name: "Node.js", level: 63 },
-        { name: "C#", level: 70 },
-        { name: "Java", level: 70 }
+        { name: "React", level: 76 },
+        { name: "CSS", level: 60 },
+        { name: "Node.js", level: 66 },
+        { name: "C#", level: 45 },
+        { name: "Java", level: 45 }
       ]
 
       const languages = [
